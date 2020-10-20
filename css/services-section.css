@@ -1,0 +1,55 @@
+/* services section */
+.services-item{
+    width: 50%;
+}
+.services-item .section-header{
+    text-align: left;
+}
+.services-item .section-header .line{
+    margin: 0 0 50px 0;
+}
+.services-item-desc{
+    padding-right: 20px;
+    color: var(--graycolor );
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.services-list{
+  list-style: none;
+}
+.services-list li{
+    margin-bottom: 10px;
+    color: var(--graycolor );
+}
+.services-list li i{
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.services-item-img img{
+    width: 100%;
+}
+.services-item .bollets{
+    list-style: none;
+    text-align: center;
+  
+}
+.services-item .bollets li{
+    width: 10px;
+    height: 10px;
+    background-color: #e8e8e8;
+    display: inline-block;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.services-item .bollets li.active{
+    background-color: var(--maincolor);
+}
+.services-item .bollets li:hover{
+    background-color: var(--maincolor);
+}

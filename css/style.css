@@ -1,0 +1,126 @@
+
+/* 
+1- common styles
+2-genarel styles
+3-sections
+    3.0 header section
+    3.1 home section 
+    3.2 About section 
+    3.3 portfolio section 
+    3.4 services section 
+    3.5 prices section 
+    3.6 team section
+    3.7 blog page 
+    3.8 contant section 
+    3.9 footer section
+
+*/
+
+
+/* 1- common section الحاجات المشتركه 
+-overlay
+- opacitiy Hover
+- section header
+-section padding
+- hover effect 1 (left to right)
+- hover effect 2 (top to bottom)
+*/
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+    .hover-opacity{
+        transition: opacity .5s;
+    }
+    .hover-opacity:hover{
+        opacity: 0.8;
+    }
+    .ltr-effect , .tb-effect{
+        position: relative;
+    }
+    .ltr-effect:after , .tb-effect:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(7, 7, 7,0.9);
+        z-index: -1;
+    }
+    .ltr-effect:after{
+        width: 0;
+        transition: width 0.5s;
+    }
+    .tb-effect:after{
+        height: 0;
+        transition: height 0.5s;
+
+    }
+    .ltr-effect:hover:after{
+        width: 100%;
+    }
+    .tb-effect:hover:after{
+        height: 100%;
+    }
+/* 2- genarel css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*css3*/
+}
+
+:root{
+    --maincolor : #6195ff;
+    --graycolor : #999;
+    --whitecolor :#fff;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.clear{
+    clear: both;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
+}
+butoon{
+    font-family:inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd-y{
+    padding: 120px 0;
+}
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--maincolor);
+    margin:0 auto 70 auto;
+  
+}
+

@@ -1,0 +1,70 @@
+/* 3.0- Header section */
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header .logo{
+    width: 40%;
+}
+.header .logo img{
+    width: 20%;
+    margin-top: 15px;
+}
+.header .nav{
+    width: 60%;
+    list-style: none;
+    text-align: right;
+}
+.header .nav > li{
+    
+    display: inline-block;
+    
+}
+.header .nav > li > a{
+    padding: 30px 10px;
+    color: white;
+    font-size: 14px;
+    display: block;
+}
+.header .nav > li > a:after{
+    content:"" ;
+    width: 0%;
+    height: 3px;
+    background-color: var(--maincolor);
+    transition: width 0.5s;
+    display: block;
+}
+.header .nav  > li >  a:hover:after{
+    width: 100%;
+}
+.header .nav  > li > a.active:after{
+    width: 100%;
+}
+.dropdown {
+    position: relative;
+
+}
+.dropdown-menu {
+    position: absolute;
+    top: 70%;
+    background-color: var(--maincolor);
+    left: -50%;
+    text-align: center;
+    width: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.dropdown-menu a{
+    color: var(--whitecolor);
+    display: block;
+    padding: 10px;
+   
+}
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
